@@ -38,7 +38,7 @@ public class Cliente {
 		
 	}
 
-	public Cliente(String nome, String email, String cpf, LocalDate dataNascimento) {
+	public Cliente(String nome, String cpf, String email, LocalDate dataNascimento) {
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
