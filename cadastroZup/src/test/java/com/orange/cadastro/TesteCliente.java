@@ -45,6 +45,7 @@ public class TesteCliente {
     }
 
     @Test
+    @DisplayName("Confere dados do cliente 'salvo'")
     public void validaClienteSalvo() {
 
         Cliente cli = dto.converteCliente();
