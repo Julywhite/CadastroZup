@@ -45,7 +45,7 @@ public class TesteCliente {
     }
 
     @Test
-    public void testaOutraCoisa() {
+    public void validaClienteSalvo() {
 
         Cliente cli = dto.converteCliente();
 
