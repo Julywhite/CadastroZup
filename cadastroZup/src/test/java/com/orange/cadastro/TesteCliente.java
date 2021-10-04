@@ -50,7 +50,7 @@ public class TesteCliente {
 
         Cliente cli = dto.converteCliente();
 
-        Assertions.assertThat( cli.getCpf().toString() ).isEqualTo( "597.579.090-50" );
+        Assertions.assertThat( cli.getCpf() ).isEqualTo( "597.579.090-50" );
     }
 
     @Test
