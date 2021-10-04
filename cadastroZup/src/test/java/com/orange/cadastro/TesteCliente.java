@@ -34,7 +34,6 @@ public class TesteCliente {
 
         cliente = new Cliente( nome, cpf, email, dataNasc );
         dto = new ClienteDtoRequisicao( nome, cpf, email, dataNasc );
-
     }
 
     @Test
@@ -62,6 +61,6 @@ public class TesteCliente {
 
         cliente.setEnderecos( lista );
 
-        Assertions.assertThat( cliente.getEnderecos().size() ).isEqualTo( 1 );
+        Assertions.assertThat( cliente.getEnderecos().size() ).isEqualTo(1);
     }
 }

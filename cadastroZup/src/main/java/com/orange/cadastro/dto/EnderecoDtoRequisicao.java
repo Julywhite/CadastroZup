@@ -34,13 +34,22 @@ public class EnderecoDtoRequisicao {
 	@NotNull(message = "Obrigatório preencher Cliente!")
 	private Cliente cliente;
 
-	
-	
+
+	public EnderecoDtoRequisicao(String logradouro, String numero, String bairro, String cidade, String estado, String cep, Cliente cliente) {
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+		this.cliente = cliente;
+	}
+
+
 	public Endereco converteEndereco() {
 		return new Endereco(logradouro, numero, bairro, cidade, estado, cep, cliente);
 	}
-	
-	
+
 
 	public String getLogradouro() {
 		return logradouro;
