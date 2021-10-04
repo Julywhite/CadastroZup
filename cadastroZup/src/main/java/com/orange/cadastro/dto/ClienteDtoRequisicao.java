@@ -26,11 +26,16 @@ public class ClienteDtoRequisicao {
 	
 	
 	public Cliente converteCliente() {
-		return new Cliente(nome, email, cpf, dataNascimento);
+		return new Cliente(nome, cpf, email, dataNascimento);
 	}
 
-	
-	
+	public ClienteDtoRequisicao(String nome, String cpf, String email, LocalDate data) {
+		this.nome = nome;
+		this.email = email;
+		this.cpf = cpf;
+		this.dataNascimento = data;
+	}
+
 	public String getNome() {
 		return nome;
 	}
